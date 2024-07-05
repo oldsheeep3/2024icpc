@@ -1,0 +1,14 @@
+N,K = map(int,input().split())
+A = list(map(int,input().split()))
+
+a = sorted(A)
+
+if K > 0:
+    print("Yes")
+    print(*a)
+else:
+    if sum(a)>=K:
+        print("Yes")
+        print(*a[::-1])
+    else:
+        print("No")
